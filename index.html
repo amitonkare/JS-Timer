@@ -3,11 +3,6 @@
 	<head>
 		<title>Stopwatch | Countdown Timer</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script type="text/javascript" src="jquery.min.js"></script>
-		<script type="text/javascript" src="script.js"></script>
-		<script type="text/javascript" src="jquery.stopwatch.js"></script>
-		<script type="text/javascript" src="jquery-backward-timer.min.js"></script>
-		<!-- <link rel="stylesheet" type="text/css" href="jquery.countdownTimer.css" /> -->
 	</head>
 	<body>
 		<div id="switches">
@@ -34,6 +29,9 @@
 					<div id="countdownTimer">00:00:00</div>
 				</div>
 				<div class="countdown-inputs-wrapper">
+					<p>Countdown : <input type="text" id="cdTime" /> <br>(Input in 00:00:00(Mins:Secs:Msecs) format only. Max 10 mins countdown allowed.)</p>
+				</div>
+<!-- 				<div class="countdown-inputs-wrapper">
 					<input class="cd-input" type="number" name="hours" min="0" max="0" value="0" disabled>
 					<input class="cd-input" type="number" name="minutes" min="0" max="10">
 					<input class="cd-input" type="number" name="seconds" min="0" max="59">
@@ -42,7 +40,7 @@
 					<span class="cd-input">Hr</span>
 					<span class="cd-input">Min</span>
 					<span class="cd-input">Sec</span>
-				</div>
+				</div> -->
 				<div class="controls-wrapper controls-cd">
 					<button id="startCD">Start</button>
 					<button id="pauseCD">Pause</button>
@@ -51,4 +49,5 @@
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript" src="script.js"></script>
 </html>
